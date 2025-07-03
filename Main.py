@@ -3,8 +3,8 @@ import cv2
 face_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 image = cv2.imread('Judah.jpeg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-cv2.imshow("Gray", gray)
-cv2.waitKey(0)
+#cv2.imshow("Gray", gray)
+#cv2.waitKey(0)
 
 faces = face_haar_cascade.detectMultiScale(gray, 1.1, 4)
 
